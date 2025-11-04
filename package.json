@@ -1,12 +1,16 @@
 {
-  "name": "welcome-bot",
+  "name": "gatekeeper-bot",
   "version": "1.0.0",
-  "description": "Simple Discord welcome bot",
+  "description": "Discord Gatekeeper Bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "^14.16.3"
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
