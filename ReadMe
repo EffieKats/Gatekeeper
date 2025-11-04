@@ -1,0 +1,16 @@
+# Gatekeeper Bot
+
+Discord bot that:
+- Welcomes new members with random messages
+- Automatically assigns the "Initiate" role
+- Includes a keep-alive system via Express
+
+## Deployment on Koyeb
+
+1. Create a GitHub repo and push this project
+2. On Koyeb:
+   - Create new app → GitHub repo → Node.js 18
+   - Enable Docker deployment
+   - Add environment variable: `TOKEN=YOUR_DISCORD_BOT_TOKEN`
+3. Deploy → bot will start and keep itself awake automatically
+4. Make sure your server has a `#welcome` channel and a role called `Initiate`
