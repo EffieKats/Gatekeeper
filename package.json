@@ -1,14 +1,16 @@
 {
   "name": "gatekeeper-bot",
   "version": "1.0.0",
-  "description": "Discord Gatekeeper Bot",
+  "description": "Discord Gatekeeper Bot - automatic welcome & role assignment",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "discord.js": "^14.13.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
   },
   "engines": {
     "node": "18.x"
