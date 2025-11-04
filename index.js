@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Client, GatewayIntentBits, Partials, EmbedBuilder } = require('discord.js');
 const express = require('express'); // for keep-alive ping
-const fetch = require('node-fetch'); // to ping itself
+const fetch = require('node-fetch'); // make sure node-fetch is v2 (supports require)
 
 const client = new Client({
   intents: [
@@ -19,7 +19,7 @@ client.once('ready', () => {
 
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.cache.find(ch => ch.name === 'welcome');
-  const roleName = 'Initiate';
+  const roleName = 'Initiate'; // single role
   const role = member.guild.roles.cache.find(r => r.name === roleName);
 
   if (role) member.roles.add(role).catch(console.error);
